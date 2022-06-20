@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
   getData() {
     this.apiService.getCommits().subscribe((res) => {
       this.commits = res;
-      console.log(this.commits,typeof(this.commits));
     });
   }
 }

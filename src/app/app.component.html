@@ -7,7 +7,7 @@
 <ol class="container list-group list-group-numbered">
   <li
     class="list-group-item d-flex justify-content-between align-items-start"
-    *ngFor="let item of commits; let i = index"
+    *ngFor="let item of commits.slice().reverse(); let i = index"
   >
     <div class="ms-2 me-auto">
       <div class="fw-bold">Commit number {{ i }}</div>
